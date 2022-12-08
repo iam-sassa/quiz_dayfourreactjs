@@ -25,6 +25,13 @@ const setDisplay = (e) => {
     console.log(filter);
 }
 
+const resetDisplay = () => {
+    setFilter('');
+    setValue('');
+    console.log(value);
+    console.log(filter);
+}
+
 const handleLimit = (e) => {
     setLimit(e.target.value);
     console.log(limit);
@@ -176,6 +183,7 @@ const minOffset = () => {
   
                     <Button  htmlType="submit" type="dashed">Filter Data</Button>
                   </form>
+                  <Button onClick={resetDisplay}  htmlType="submit" type="dashed">Reset Filter</Button>
                   </div>
                 </Col>
                 <Col span={6}>

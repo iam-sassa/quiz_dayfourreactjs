@@ -8,7 +8,7 @@ import "./Pages.css";
 const { Search, TextArea } = Input;
 const { Content } = Layout;
 
-const PostPcategory = () => {
+const PostPage = () => {
 
 const [data, setData] = useState(null);
 const [filter, setFilter] = useState('');
@@ -21,6 +21,13 @@ const setDisplay = (e) => {
     e.preventDefault();
     setFilter(e.target[0].value);
     setValue(e.target[1].value);
+    console.log(value);
+    console.log(filter);
+}
+
+const resetDisplay = () => {
+    setFilter('');
+    setValue('');
     console.log(value);
     console.log(filter);
 }
@@ -43,7 +50,7 @@ const minOffset = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:3004/post?" + filter + "=" + value + "&_limit=" + limit + "&_pcategory=" + offset);
+      const response = await axios.get("http://localhost:3004/post?" + filter + "=" + value + "&_limit=" + limit + "&_page=" + offset);
 
       setData(response.data);
       console.log(response.data);
@@ -176,6 +183,7 @@ const minOffset = () => {
   
                     <Button  htmlType="submit" type="dashed">Filter Data</Button>
                   </form>
+                    <Button onClick={resetDisplay}  htmlType="submit" type="dashed">Reset Filter</Button>
                   </div>
                 </Col>
                 <Col span={6}>
@@ -252,4 +260,4 @@ const minOffset = () => {
     );
 };
 
-export default PostPcategory;
+export default PostPage;
