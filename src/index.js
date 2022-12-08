@@ -2,12 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import HomePage from './pages/HomePage';
+import PostPage from './pages/PostPage';
+import UserPage from './pages/UserPage';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<HomePage />}>
+          <Route path="/post" element={<PostPage />} />
+          <Route path="/user" element={<UserPage />} />
+    </Route>
+    </Routes>
+    
+    </BrowserRouter>
+  
   </React.StrictMode>
 );
 

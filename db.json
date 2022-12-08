@@ -1,0 +1,96 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "Harry potter",
+      "category": "Entertainment",
+      "description": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling."
+    },
+    {
+      "id": 2,
+      "title": "Reactjs",
+      "category": "Computer",
+      "description": "React is a JavaScript library for building user interfaces. React is used to build single-page applications."
+    },
+    {
+      "id": 3,
+      "title": "Corona Virus",
+      "category": "Health",
+      "description": "NHS advice about coronavirus (COVID-19), including information on symptoms, testing, vaccination and staying at home."
+    },
+    {
+      "id": 4,
+      "title": "Json server",
+      "category": "Computer",
+      "description": "JSON Server is a Node Module that you can use to create demo rest json webservice in less than a minute."
+    },
+    {
+      "id": 5,
+      "title": "Archery",
+      "category": "Sport",
+      "description": "Archery is the sport, practice, or skill of using a bow to shoot arrows."
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "Elaine Betelgeuse",
+      "age": "18",
+      "email": "elaine@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Alaste Aarche",
+      "age": "18",
+      "email": "alaa@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Simon Kyle",
+        "age": "27",
+        "email": "simonkiler@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Numeyin Ackon",
+        "age": "50",
+        "email": "salalse@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Netherlandieen koi",
+        "age": "12",
+        "email": "sukeok@gmail.com"
+    },
+    {
+        "id": 6,
+        "name": "Helena Boiu",
+        "age": "18",
+        "email": "helememen@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Castuillo Real",
+        "age": "18",
+        "email": "goioo@gmail.com"
+      },
+      {
+          "id": 8,
+          "name": "Namion juil",
+          "age": "27",
+          "email": "nomnommi@gmail.com"
+      },
+      {
+          "id": 9,
+          "name": "Leanne Geroid",
+          "age": "50",
+          "email": "leannne@gmail.com"
+      },
+      {
+          "id": 10,
+          "name": "Concerenin Jaiolo",
+          "age": "12",
+          "email": "concern@gmail.com"
+      }
+  ]
+}

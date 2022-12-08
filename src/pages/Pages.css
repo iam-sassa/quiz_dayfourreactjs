@@ -1,0 +1,15 @@
+.Card {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Data {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.Input {
+    background-color: darkkhaki;
+    padding: 10px;
+}
